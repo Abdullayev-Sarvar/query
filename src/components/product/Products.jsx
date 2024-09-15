@@ -1,9 +1,9 @@
 import React from 'react'
-import { useGetProductsQuery } from '../../redux/api/productsApi'
+import { useProductsQuery } from '../../redux/api/productsApi'
 import { NavLink } from 'react-router-dom';
 
 const Products = () => {
-  const { data } = useGetProductsQuery();
+  const { data } = useProductsQuery();
 
   return (
     <div>
