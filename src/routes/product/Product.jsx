@@ -1,9 +1,9 @@
 import React from 'react'
-import { useGetProductQuery } from '../../redux/api/productApi'
+import { useProductQuery } from '../../redux/api/productApi'
 import Container from '../../container/Container';
 
 const Product = () => {
-    const {data} = useGetProductQuery();
+    const {data} = useProductQuery();
   return (
     <div>
         <Container>
