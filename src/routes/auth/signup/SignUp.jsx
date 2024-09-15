@@ -1,5 +1,5 @@
 import { Button, Form, Input, Typography, notification } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import { signUp } from "../../../redux/slices/authSlice";
@@ -40,8 +40,8 @@ const SignUp = () => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <Title level={2} className="text-center">
-        Sing Up
+      <Title level={2} className="text-start">
+        <NavLink to='/'>Sign Up</NavLink>
       </Title>
       <Form.Item
         label="Firstname"

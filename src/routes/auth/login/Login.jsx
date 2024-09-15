@@ -1,5 +1,5 @@
 import { Button, Form, Input, Typography, notification } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useLogInMutation } from "../../../redux/api/authApi";
 import { logIn } from "../../../redux/slices/authSlice";
 import { useDispatch } from "react-redux";
@@ -42,7 +42,9 @@ const Login = () => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <Title level={2} className="text-center">Login</Title>
+      <Title level={2} className="text-start">
+        <NavLink to='/'>Login</NavLink>
+      </Title>
       <Form.Item
         label="Username"
         name="username"
