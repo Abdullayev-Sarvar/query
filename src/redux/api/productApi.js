@@ -2,7 +2,7 @@ import { api } from "./index";
 
 const productApi = api.injectEndpoints({
   endpoints: (build) => ({
-    singleQuery: build.query({
+    productQuery: build.query({
       query: (id) => ({
         url:"/product/single-product/66a5fe5aef9f646863b22f6f", 
       }),
@@ -10,4 +10,4 @@ const productApi = api.injectEndpoints({
   }),
 });
 
-export const { useSingleQuery } = productApi;
+export const { useProductQuery } = productApi;
