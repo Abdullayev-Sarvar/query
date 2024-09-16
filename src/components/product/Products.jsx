@@ -1,9 +1,9 @@
 import React from 'react'
-import { useProductsQuery } from '../../redux/api/productsApi'
+import { useGetProductsQuery } from '../../redux/api/productsApi'
 import { NavLink } from 'react-router-dom';
 
 const Products = () => {
-  const { data } = useProductsQuery();
+  const { data } = useGetProductsQuery();
 
   return (
     <div className='grid grid-cols-4 gap-4 my-8'>

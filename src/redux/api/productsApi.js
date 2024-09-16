@@ -2,7 +2,7 @@ import { api } from "./index";
 
 const productsApi = api.injectEndpoints({
   endpoints: (build) => ({
-    products: build.query({
+    getProducts: build.query({
       query: () => ({
         url: "/product/all"
       }),
@@ -10,4 +10,4 @@ const productsApi = api.injectEndpoints({
   }),
 });
 
-export const { useProductsQuery } = productsApi;
+export const { useGetProductsQuery } = productsApi;
