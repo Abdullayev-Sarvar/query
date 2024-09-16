@@ -20,7 +20,7 @@ const Login = () => {
     if(isSuccess){
       dispatch(logIn({token: data.payload.token}))
       notification.success({
-        message: "Successfully logged in! Go ahed 😊"
+        message: "Successfully logged in! Go ahead 😊"
       })
       navigate("/profile")
     }
